@@ -1,0 +1,7 @@
+.gradiant-style
+{
+background-image:linear-gradiant(to right,red,pink);
+width:100%;
+height:400px;
+
+}

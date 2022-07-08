@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable</title>
+</head>
+<style>
+:root{
+    --primary-color:red;
+    --secondary-color:blue;
+
+}
+div{
+            height: 250px;
+            width: 250px;
+
+        }
+        .div1{
+         background-color:var(--primary-color);
+        position: absolute;
+        z-index: -2;
+
+        }
+        .div2{background-color:var(--secondary-color);
+        position: absolute;
+        left: 150px;
+        top: 150px;
+        z-index: 1;
+        }
+        .div3{background-color:var(--secondary-colr, yellow);
+        position: absolute;
+        left: 250px;
+        top: 250px;
+        z-index: 3;
+        }
+        @media  screen and (max-width:600px) {
+            :root{
+                --primary-color: blue;
+                --secondary-color: green;
+            }
+        }
+
+</style>
+<body>
+     <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+</body>
+</html>

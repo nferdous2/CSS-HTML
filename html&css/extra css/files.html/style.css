@@ -1,0 +1,9 @@
+body{
+background-image:url("back1.jpg");
+background-repeat:no-repeat;
+background-position:right top;
+background-attachment:fixed;
+
+
+background:#fff url("back1.jpg") no-repeat right top fixed;
+}

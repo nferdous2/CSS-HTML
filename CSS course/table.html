@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table design</title>
+    <style>
+        table{
+            border: black solid;
+         border-collapse:collapse;
+         width: 100%;
+        }
+        th,td{
+            border:2px black solid;
+            padding: 5px;
+            text-align: center;
+        }
+        
+        th{
+            background-color: brown;
+            color: cornsilk;
+         height: 30px;
+         vertical-align: middle;
+        }
+        tr:nth-child(even){
+            background-color: lightslategrey;
+        }
+        tr:nth-child(odd){
+            background-color:yellow;
+        }
+    tr:hover
+    {
+        background-color: lightseagreen;
+    }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Student details</caption>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>GPA</th>
+            <th>phone</th>
+            <th>bio</th>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>xyz</td>
+            <td>2.5</td>
+            <td>111111111111</td>
+            <td>Clita sit ipsum sed magna dolor ipsum invidunt sed dolor, takimata kasd sanctus gubergren gubergren ut dolor ut dolore. Justo.</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>xxz</td>
+            <td>3.5</td>
+            <td>1333333</td>
+            <td>Clita sit ipsum sed magna dolor ipsum invidunt sed dolor, takimata kasd sanctus gubergren gubergren ut dolor ut dolore. Justo.</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>xyz</td>
+            <td>4.5</td>
+            <td>1112222222</td>
+            <td>Clita sit ipsum sed magna dolor ipsum invidunt sed dolor, takimata kasd sanctus gubergren gubergren ut dolor ut dolore. Justo.</td>
+        </tr>
+
+        <tr>
+            <td>104</td>
+            <td>abx</td>
+            <td>5.0</td>
+            <td>111111111111</td>
+            <td>Clita sit ipsum sed magna dolor ipsum invidunt sed dolor, takimata kasd sanctus gubergren gubergren ut dolor ut dolore. Justo.</td>
+        </tr>
+        <tr>
+            <td>105</td>
+            <td>abz</td>
+            <td>5.0</td>
+            <td>111111111111</td>
+            <td>Clita sit ipsum sed magna dolor ipsum invidunt sed dolor, takimata kasd sanctus gubergren gubergren ut dolor ut dolore. Justo.</td>
+        </tr>
+    </table>   
+</body>
+</html>

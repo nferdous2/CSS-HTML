@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform property</title>
+    <style>
+        .div1{
+            height:70px;
+            width: 80px;
+            background:red;
+            margin: 0 auto;
+            margin-top: 200px;
+            transition: 3s;
+            text-align: center;
+        }
+        .div1:hover{
+            transform: rotate(360deg);
+            width: 400px;
+        }
+        .div2{
+            height: 70px;
+            width: 70px;
+            background:blue;
+            margin: 0 auto;
+            text-align: center;
+            transition: width 2s, transform 2s;
+        }
+        .div2:hover{
+            transform: translate(150px, 250px);
+            width: 400px;
+        }
+        h1{
+           
+        
+           font-size: 2.5rem;
+           color:yellow;
+        
+       }
+       h2{
+           
+        
+           font-size: 2.5rem;
+           color: rgb(128, 39, 187);
+        
+       }
+
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <h1>Bangladesh</h1>
+    </div>
+    <div class="div2">
+        <h2>Bangladesh</h2>
+    </div>
+    
+</body>
+</html>

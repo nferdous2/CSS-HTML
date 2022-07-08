@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo class</title>
+<style>
+    a.my-link:hover{
+        color: rgb(235, 125, 82);
+
+    }
+    input{
+        padding: 10px;
+        font-size: 1rem;
+        width:150px
+    }
+    input:hover{
+        background-color: magenta;
+    }
+    table,tr,td{
+        border: 1px solid black;
+    }
+    tr:nth-child(even)
+    {
+        background-color: burlywood;
+    }
+
+</style>
+</head>
+<body>
+
+    <a class ="my-link" href="#">Tutorial</a>
+    <a href="#">Home</a>
+    <br>
+    <br>
+    <input type="text" placeholder="search here">
+<table>
+    <tr>
+        <td>name</td>
+        <td>age</td>
+    </tr>
+    <tr>
+        <td>aaa</td>
+        <td>111</td>
+    </tr>
+    <tr>
+        <td>bba</td>
+        <td>1</td>
+    </tr>
+</table>
+</body>
+</html>

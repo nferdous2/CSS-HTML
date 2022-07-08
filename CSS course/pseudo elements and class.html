@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>elements and class</title>
+    <style>
+        .demo p:nth-child(2n+1)
+        {
+            background-color: darkorchid;
+            color:black;
+        }
+        li:first-of-type{
+            background-color: burlywood;
+            color: crimson;
+        }
+        p::first-line{
+            color: rgb(67, 255, 255);
+            font-size: 3rem;
+        }
+        ::selection{
+            color: darkblue;
+            background-color: rgb(192, 182, 41);
+        }
+        .demo::before, .demo::after{
+            background-color: darkslategray;
+            display: inline-block;
+            height: 20px;
+            width: 100%;
+            content: '';
+        }
+    </style>
+</head>
+<body>
+ <div div class="demo">
+<p> She walks in beauty, like the night</p>
+<p>Of cloudless climes and starry skies;</p>
+<p>And all that’s best of dark and bright</p>
+</div>
+<ul>
+    <li>home1</li>
+    <li>home2</li>
+    <li>home3</li>
+    <li>home4</li>
+</ul>
+</body>
+</html>

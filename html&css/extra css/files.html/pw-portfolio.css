@@ -1,0 +1,42 @@
+body{
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Recursive', sans-serif;
+}
+h1{
+    font-size: 50px;
+}
+.dp{
+    color: burlywood;
+}
+.un{
+    color: orchid;
+}
+.ln29colour{
+    color: rosybrown;
+    margin: 0;
+    padding: 0;
+}
+.ln20indent{
+   text-indent: 70px;
+}
+.ln19indent{
+    text-indent: 30px;
+}
+
+.half-width{
+    width: 100%;
+    padding:10%;
+}
+
+div{
+    margin-top: 40px;
+}
+
+.link_button{
+    text-decoration: none;
+    background-image: linear-gradient(45deg, lightSalmon, tomato);
+    padding: 10px 10px;
+    color: white;
+    float:  bold;
+}

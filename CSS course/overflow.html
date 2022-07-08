@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow</title>
+    <style>
+        div{
+            height:100px ;
+            width: 250px;
+            background-color: blueviolet;
+            border:1px solid red;
+            scroll;
+            overflow:scroll;
+        }
+        .tooltip
+        {
+            position: relative;
+        }
+     .tooltip .tooltip-text
+     {
+         visibility: hidden;
+         width: 150PX;
+            background-color: cornflowerblue;
+            color: crimson;
+            padding: 10px;
+            border-radius: 5px;
+            position:absolute;
+            top: 30px;
+            left: 30px;
+            z-index: 1;
+            }
+            .tooltip:hover .tooltip-text
+            {
+                visibility: visible;
+            }
+    </style>
+</head>
+<body>
+    <a href="a" class="tooltip">
+        Facebook
+        <span class="tooltip-text">Facebook is a social media</span>
+
+    </a>
+    <br>
+    <br>
+
+    <div>Global climate change has already had observable effects on the environment. Glaciers have shrunk, ice on rivers and lakes is breaking up earlier, plant.
+    </div>
+</body>
+</html>

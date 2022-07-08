@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40%;
+            opacity: 0.6;
+        }
+
+        .card {
+            position: relative;
+             width: 44%;
+            /*height: 500px; */
+             margin: 20px 50px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .glow:before,
+        .glow:after {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: -6px;
+            right: -6px;
+            bottom: -6px;
+            background: linear-gradient(-45deg, #750e5c, #a471df, #119ea3);
+            background-size: 400%;
+            height: calc(100% + 5px);
+            width: calc(100% + 10px); 
+            z-index: -1;
+            animation: animate 20s linear infinite;
+        }
+
+        @keyframes animate {
+            0% {
+                background-position: 0 0;
+            }
+
+            50% {
+                background-position: 400% 0;
+            }
+
+            100% {
+                background-position: 0 0;
+            }
+        }
+
+        .glow::after {
+            opacity: 1;
+            filter: blur(30px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="col-lg-6 col-md-6 col-sm-6">
+         <img src="img.jpg" alt="">
+        </div>
+        <div class="glow"></div>
+    </div>
+</body>
+
+</html>

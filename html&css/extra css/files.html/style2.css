@@ -1,0 +1,6 @@
+.gradient-style
+{
+height:400px;
+width:100%;
+background-image:linear-gradient( to right,
+ #4133C5 ,#F2A1E5, #DE38C5 ,#BC16A2, #C387D7 ,#8A589B ,#D86CA9 );}

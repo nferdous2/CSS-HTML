@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Button</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .ball {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #ff7fb4;
+            background: linear-gradient(45deg, transparent, transparent 40%, rgb(23, 219, 138));
+            animation: animate 2s linear infinite;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .ball:before {
+            content: '';
+            position: absolute;
+            left: 6px;
+            right: 6px;
+            top: 6px;
+            bottom: 6px;
+            background: #131212;
+            border-radius: 50%;
+            z-index: 1000;
+        }
+
+        .ball:after {
+            content: '';
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            top: 0px;
+            bottom: 0px;
+            background: linear-gradient(45deg, transparent, transparent 40%, rgb(23, 219, 138));
+            border-radius: 50%;
+            z-index: 1000;
+            z-index: 1;
+            filter: blur(30px);
+        }
+
+        .loader {
+            width: 100px;
+            height: 100px;
+            background-color: blanchedalmond;
+            border-radius: 50%;
+            margin: 20% 20%;
+            background: linear-gradient(45deg, transparent, transparent 40%, #e050bc, #790be0, #fa1964);
+            animation: animate 2s linear infinite;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .loader:before {
+            position: absolute;
+            content: '';
+            top: 3px;
+            left: 3px;
+            right: 3px;
+            bottom: 3px;
+            background: black;
+            border-radius: 50%;
+            z-index: 1000;
+        }
+
+        .loader:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, transparent, transparent 40%, #e050bc, #790be0, #fa1964);
+            border-radius: 50%;
+            z-index: 1000;
+            z-index: 1;
+            filter: blur(30px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ball">
+    </div>
+    <div class="loader">
+
+    </div>
+</body>
+
+</html>
